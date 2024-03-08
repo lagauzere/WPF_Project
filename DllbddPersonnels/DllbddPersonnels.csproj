@@ -53,6 +53,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataContext1.lqml</DependentUpon>
     </Compile>
+    <Compile Include="DataContext2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataContext2.lqml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +70,16 @@
     <None Include="DataContext1.lqml">
       <Generator>DevartLinqToSqlGenerator</Generator>
       <LastGenOutput>DataContext1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataContext2.Diagram1.view">
+      <DependentUpon>DataContext2.lqml</DependentUpon>
+    </None>
+    <None Include="DataContext2.edps">
+      <DependentUpon>DataContext2.lqml</DependentUpon>
+    </None>
+    <None Include="DataContext2.lqml">
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>DataContext2.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
