@@ -27,14 +27,14 @@
         <Label Content="Service :" HorizontalAlignment="Left" Margin="526,293,0,0" VerticalAlignment="Top"/>
         <Label Content="Prénom :" HorizontalAlignment="Left" Margin="526,129,0,0" VerticalAlignment="Top"/>
         <Label Content="Nom :" HorizontalAlignment="Left" Margin="526,90,0,0" VerticalAlignment="Top"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="42,122,0,84" HorizontalAlignment="Left" Width="129"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="187,123,0,83" HorizontalAlignment="Left" Width="129"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="336,122,0,84" HorizontalAlignment="Left" Width="128"/>
         <TextBox HorizontalAlignment="Left" Margin="601,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="601,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="601,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="601,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="601,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <ListBox HorizontalAlignment="Left" Height="185" Margin="53,134,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox HorizontalAlignment="Left" Height="185" Margin="204,134,0,0" VerticalAlignment="Top" Width="100"/>
+        <ListBox HorizontalAlignment="Left" Height="185" Margin="349,134,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
