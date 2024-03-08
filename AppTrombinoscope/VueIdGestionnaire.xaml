@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AppTrombinoscope"
         mc:Ignorable="d"
-        Title="VueIdGestionnaire" Height="450" Width="800">
-    <Grid>
-        
+        Title="VueIdGestionnaire" Height="321" Width="446">
+    <Grid Margin="0,0,17,0">
+        <Label Content="Nom d'utilisateur" HorizontalAlignment="Left" Margin="102,76,0,0" VerticalAlignment="Top" Height="24" Width="108"/>
+        <TextBox Name="login"  HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="272,82,0,0" Height="32" Width="134"/>
+        <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="102,142,0,0" VerticalAlignment="Top" Height="24" Width="90"/>
+        <TextBox Name="mdp" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="272,147,0,0" Height="19" Width="134"/>
+        <Button Content="Connexion" HorizontalAlignment="Left" Margin="135,212,0,0" VerticalAlignment="Top" Width="75" Click="Connexion"/>
+        <Button Content="Annuler" HorizontalAlignment="Left" Margin="259,212,0,0" VerticalAlignment="Top" Width="75" Click="Annulerk"/>
+
     </Grid>
 </Window>

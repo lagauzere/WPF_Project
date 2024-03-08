@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DllbddPersonnels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,24 @@ namespace AppTrombinoscope
         public VueIdGestionnaire()
         {
             InitializeComponent();
+        }
+
+        private void Connexion(object sender, RoutedEventArgs e)
+        {
+            if(login.Text== "UtilisateurBDD" && mdp.Text == "Password1234@")
+            {
+                bddpersonnels.Gestionnaire = true;
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("erreur de mot de passe ou de login");
+            }
+        }
+
+        private void Annulerk(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

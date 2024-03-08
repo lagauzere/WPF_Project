@@ -15,8 +15,8 @@
             <MenuItem Name="Liste_du_Personnel" IsEnabled="False" Header="Liste du Personnel" Width="136" Height="35"/>
             <MenuItem Name="Gestion_Services"   IsEnabled="False" Header="Gestion : Services" Width="112" Height="35"/>
             <MenuItem Name="Gestion_Fonctions" IsEnabled="False" Header="Gestion : Fonctions" Width="121" Height="35"/>
-            <MenuItem Name="Gestion_Personnels" IsEnabled="False" Header="Gestion : Personnels" Width="128" Height="35"/>
-            <MenuItem Name="Gestionnaire" IsEnabled="False" Header="Gestionnaire" Width="85" Height="35"/>
+            <MenuItem Name="Gestion_Personnels" IsEnabled="False" Header="Gestion : Personnels" Width="128" Height="35" Click="Gestion_Personnels_Click"/>
+            <MenuItem Name="Gestionnaire" IsEnabled="False" Header="Gestionnaire" Width="85" Height="35" Click="Gestionnaire_Click"/>
             <MenuItem Header="Paramètres BDD" Width="112" Height="35" Click="ParamBdd_Click"/>
         </Menu>
         <Label Content="Services" HorizontalAlignment="Left" Margin="80,90,0,0" VerticalAlignment="Top"/>

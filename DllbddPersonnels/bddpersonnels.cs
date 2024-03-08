@@ -11,7 +11,7 @@ namespace DllbddPersonnels
 {
     public class bddpersonnels
     {
-
+        public static Boolean Gestionnaire { get; set; }
         private BddpersonnelDataContext bdd;
         private Boolean connexionStatus = false;
 

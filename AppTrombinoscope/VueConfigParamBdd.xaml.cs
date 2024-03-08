@@ -35,8 +35,8 @@ namespace AppTrombinoscope
             Properties.Settings.Default.Password=pwd.Text;
             Properties.Settings.Default.Port=port.Text;
             Properties.Settings.Default.Ipaddress = ip.Text;
-
             Properties.Settings.Default.Save();
+            this.Close();
         }
     }
 }
