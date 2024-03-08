@@ -1,0 +1,40 @@
+﻿<Window x:Class="AppTrombinoscope.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppTrombinoscope"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Height="52" VerticalAlignment="Top">
+            <MenuItem Header="Connexion BDD" Click="Connexion_Click" Width="103" Height="35"/>
+            <MenuItem Header="Liste du Personnel" Width="136" Height="35"/>
+            <MenuItem Header="Gestion : Services" Width="112" Height="35"/>
+            <MenuItem Header="Gestion : Fonctions" Width="121" Height="35"/>
+            <MenuItem Header="Gestion : Personnels" Width="128" Height="35"/>
+            <MenuItem Header="Gestionnaire" Width="85" Height="35"/>
+            <MenuItem Header="Paramètres BDD" Width="112" Height="35" Click="ParamBdd_Click"/>
+        </Menu>
+        <Label Content="Services" HorizontalAlignment="Left" Margin="80,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fonctions" HorizontalAlignment="Left" Margin="368,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Membres" HorizontalAlignment="Left" Margin="221,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Téléphone :" HorizontalAlignment="Left" Margin="526,375,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fonctions :" HorizontalAlignment="Left" Margin="526,336,0,0" VerticalAlignment="Top"/>
+        <Label Content="Service :" HorizontalAlignment="Left" Margin="526,293,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prénom :" HorizontalAlignment="Left" Margin="526,129,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nom :" HorizontalAlignment="Left" Margin="526,90,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="42,122,0,84" HorizontalAlignment="Left" Width="129"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="187,123,0,83" HorizontalAlignment="Left" Width="129"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="336,122,0,84" HorizontalAlignment="Left" Width="128"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,134,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,340,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
