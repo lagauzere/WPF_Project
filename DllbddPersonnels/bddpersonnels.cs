@@ -4,6 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using BddpersonnelContext;
 
 namespace DllbddPersonnels
@@ -12,16 +13,36 @@ namespace DllbddPersonnels
     {
 
         private BddpersonnelDataContext bdd;
+        private Boolean connexionStatus = false;
 
         public bddpersonnels(string username, string password, string ipadress, string port)
         {
-            bdd = new BddpersonnelDataContext("User Id=" + username + ";Password=" + password + ";Host=" + ipadress + ";Port=" + port + ";Database=bddpersonnels;Persist Security Info=True");
+            Bdd = new BddpersonnelDataContext("User Id=" + username + ";Password=" + password + ";Host=" + ipadress + ";Port=" + port + ";Database=bddpersonnels;Persist Security Info=True");
+            try
+            {
+                Bdd.Connection.Open();
+              
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+            ConnexionStatus = true;
+        }
+
+        public BddpersonnelDataContext Bdd { get => bdd; set => bdd = value; }
+        public bool ConnexionStatus { get => connexionStatus; set => connexionStatus = value; }
+
+
+        public Boolean ConnexionGestionnaire(string login, string mdp)
+        {
+
+            return false;
         }
 
 
-
-
-
-
     }
+
+  
+
 }

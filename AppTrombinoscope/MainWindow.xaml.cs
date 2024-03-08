@@ -30,6 +30,13 @@ namespace AppTrombinoscope
         private void Connexion_Click(object sender, RoutedEventArgs e)
         {
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
+            if (co.ConnexionStatus == true) {
+                Liste_du_Personnel.IsEnabled = true;
+                Gestion_Fonctions.IsEnabled = true;
+                Gestion_Personnels.IsEnabled = true;
+                Gestion_Services.IsEnabled = true;
+                Gestionnaire.IsEnabled = true;
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
