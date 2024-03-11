@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace AppTrombinoscope
 {
     /// <summary>
-    /// Logique d'interaction pour VueServiceFonction.xaml
+    /// Logique d'interaction pour VueFonction.xaml
     /// </summary>
-    public partial class VueServiceFonction : Window
+    public partial class VueFonction : Window
     {
-        public VueServiceFonction()
+        public VueFonction()
         {
             InitializeComponent();
-        }
-
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

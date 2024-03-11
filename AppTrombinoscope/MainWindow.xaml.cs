@@ -25,6 +25,8 @@ namespace AppTrombinoscope
         public MainWindow()
         {
             InitializeComponent();
+            this.MinWidth = 850;
+            this.MaxWidth = 850;
         }
 
         private void Connexion_Click(object sender, RoutedEventArgs e)
@@ -42,6 +44,23 @@ namespace AppTrombinoscope
             VueConfigParamBdd vueConfigbdd = new VueConfigParamBdd();
 
             vueConfigbdd.Show();
+        }
+
+        private void Personnels_Click(object sender, RoutedEventArgs e)
+        {
+            VuePersonnel vuePersonnel = new VuePersonnel();
+            vuePersonnel.Show();
+        }
+
+        private void GestService_Click(object sender, RoutedEventArgs e)
+        {
+            VueServiceFonction vueService = new VueServiceFonction();
+            vueService.Show();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

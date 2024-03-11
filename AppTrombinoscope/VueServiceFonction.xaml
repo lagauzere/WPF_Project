@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="VueServiceFonction" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Services" HorizontalAlignment="Left" Margin="90,56,0,0" VerticalAlignment="Top" />
+        <ListBox HorizontalAlignment="Left" Width="164" Margin="37,87,0,20" ItemsSource="{Binding}" DisplayMemberPath="Id"/>
+
+        <Label Content="Intitule du service" HorizontalAlignment="Left" Margin="320,56,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,60,0,0"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,100,0,0"/>
+        <Label Content="Intitule d'une fonction" HorizontalAlignment="Left" Margin="320,250,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,250,0,0"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,300,0,0" Click="Cancel_Click"/>
     </Grid>
 </Window>

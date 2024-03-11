@@ -18,7 +18,11 @@ namespace DllbddPersonnels
             bdd = new BddpersonnelDataContext("User Id=" + username + ";Password=" + password + ";Host=" + ipadress + ";Port=" + port + ";Database=bddpersonnels;Persist Security Info=True");
         }
 
+        public static void InsertPeople(string newpeople)
+        {
+            Personnel perso = new Personnel();
 
+        }
 
 
 

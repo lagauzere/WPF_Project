@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Devart.Data.Linq, Version=5.1.10.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -58,6 +59,9 @@
     <Compile Include="VueConfigParamBdd.xaml.cs">
       <DependentUpon>VueConfigParamBdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VueFonction.xaml.cs">
+      <DependentUpon>VueFonction.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VueIdGestionnaire.xaml.cs">
       <DependentUpon>VueIdGestionnaire.xaml</DependentUpon>
     </Compile>
@@ -80,6 +84,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="VueConfigParamBdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VueFonction.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
