@@ -22,11 +22,24 @@ namespace AppTrombinoscope
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bddpersonnels bdd;
         public MainWindow()
         {
             InitializeComponent();
             this.MinWidth = 850;
             this.MaxWidth = 850;
+            try
+            {
+                bdd = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress,
+                    Properties.Settings.Default.Port);
+                List<BddpersonnelContext.Service> list = bdd.fetchallservice();
+                this.ListService.ItemsSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
 
         private void Connexion_Click(object sender, RoutedEventArgs e)
@@ -63,5 +76,6 @@ namespace AppTrombinoscope
             VueListePersonnels vueListePersonnels = new VueListePersonnels();
             vueListePersonnels.Show();
         }
+
     }
 }

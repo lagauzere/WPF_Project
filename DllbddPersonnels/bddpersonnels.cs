@@ -24,6 +24,11 @@ namespace DllbddPersonnels
 
         }
 
+        public List<Service> fetchallservice()
+        {
+            return bdd.Services.ToList();
+        }
+
 
 
 

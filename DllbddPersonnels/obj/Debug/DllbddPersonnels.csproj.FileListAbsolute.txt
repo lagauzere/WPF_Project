@@ -16,3 +16,10 @@ D:\IUT\Semestre4\R4_01\WPF_projet\DllbddPersonnels\obj\Debug\DllbddPersonnels.cs
 D:\IUT\Semestre4\R4_01\WPF_projet\DllbddPersonnels\obj\Debug\DllbddPersonnels.csproj.CopyComplete
 D:\IUT\Semestre4\R4_01\WPF_projet\DllbddPersonnels\obj\Debug\DllbddPersonnels.dll
 D:\IUT\Semestre4\R4_01\WPF_projet\DllbddPersonnels\obj\Debug\DllbddPersonnels.pdb
+Z:\R4.01\WPF_Project\DllbddPersonnels\bin\Debug\DllbddPersonnels.dll
+Z:\R4.01\WPF_Project\DllbddPersonnels\bin\Debug\DllbddPersonnels.pdb
+Z:\R4.01\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csprojAssemblyReference.cache
+Z:\R4.01\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csproj.CoreCompileInputs.cache
+Z:\R4.01\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csproj.CopyComplete
+Z:\R4.01\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.dll
+Z:\R4.01\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.pdb
