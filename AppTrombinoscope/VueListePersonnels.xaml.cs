@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace AppTrombinoscope
 {
     /// <summary>
-    /// Logique d'interaction pour VuePersonnel.xaml
+    /// Logique d'interaction pour VueListePersonnels.xaml
     /// </summary>
-    public partial class VuePersonnel : Window
+    public partial class VueListePersonnels : Window
     {
-        public VuePersonnel()
+        public VueListePersonnels()
         {
             InitializeComponent();
-        }
-
-        private void save_Click(object sender, RoutedEventArgs e)
-        {
-            
         }
     }
 }

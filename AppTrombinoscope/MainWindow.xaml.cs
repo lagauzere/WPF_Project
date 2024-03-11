@@ -58,9 +58,10 @@ namespace AppTrombinoscope
             vueService.Show();
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void ListePersonnel(object sender, RoutedEventArgs e)
         {
-
+            VueListePersonnels vueListePersonnels = new VueListePersonnels();
+            vueListePersonnels.Show();
         }
     }
 }

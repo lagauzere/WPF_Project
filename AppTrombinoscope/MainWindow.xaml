@@ -12,7 +12,7 @@
         </Grid.RowDefinitions>
         <Menu Height="52" VerticalAlignment="Top">
             <MenuItem Header="Connexion BDD" Click="Connexion_Click" Width="103" Height="35"/>
-            <MenuItem Header="Liste du Personnel" Width="136" Height="35"/>
+            <MenuItem Header="Liste du Personnel" Width="136" Height="35" Click="ListePersonnel"/>
             <MenuItem Header="Gestion : Services" Width="112" Height="35" Click="GestService_Click"/>
             <MenuItem Header="Gestion : Fonctions" Width="121" Height="35"/>
             <MenuItem Header="Gestion : Personnels" Width="128" Height="35" Click="Personnels_Click"/>

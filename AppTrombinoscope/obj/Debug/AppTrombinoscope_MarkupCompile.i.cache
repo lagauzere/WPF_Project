@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\IUT\Semestre4\R4_01\WPF_projet\AppTrombinoscope\obj\Debug\
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\
 AppTrombinoscope
 none
 false
 DEBUG;TRACE
-D:\IUT\Semestre4\R4_01\WPF_projet\AppTrombinoscope\App.xaml
-6647625543
+Z:\R4.01\WPF_Project\AppTrombinoscope\App.xaml
+7-466881198
 
-11-1138213176
-15-979768158
-MainWindow.xaml;VueConfigParamBdd.xaml;VueFonction.xaml;VueIdGestionnaire.xaml;VuePersonnel.xaml;VueServiceFonction.xaml;
+121981907623
+15571774563
+MainWindow.xaml;VueConfigParamBdd.xaml;VueFonction.xaml;VueIdGestionnaire.xaml;VueListePersonnels.xaml;VuePersonnel.xaml;VueServiceFonction.xaml;
 
 True
 

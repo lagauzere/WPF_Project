@@ -90,3 +90,5 @@ Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CoreComp
 Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CopyComplete
 Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.exe
 Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.baml

@@ -65,6 +65,9 @@
     <Compile Include="VueIdGestionnaire.xaml.cs">
       <DependentUpon>VueIdGestionnaire.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VueListePersonnels.xaml.cs">
+      <DependentUpon>VueListePersonnels.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VuePersonnel.xaml.cs">
       <DependentUpon>VuePersonnel.xaml</DependentUpon>
     </Compile>
@@ -92,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="VueIdGestionnaire.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VueListePersonnels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
