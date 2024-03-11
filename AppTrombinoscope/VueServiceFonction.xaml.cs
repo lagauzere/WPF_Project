@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BddpersonnelContext;
+using DllbddPersonnels;
 
 namespace AppTrombinoscope
 {
@@ -28,9 +30,19 @@ namespace AppTrombinoscope
             this.MaxWidth = 800;
         }
 
-        private void Cancel_Click(object sender, RoutedEventArgs e)
+        private void Add_Personnel(object sender, RoutedEventArgs e)
         {
-            this.Close();
+
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Service s = new Service();
+            
+
+            
+        }
+
+       
     }
 }

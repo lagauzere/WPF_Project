@@ -41,6 +41,12 @@ namespace DllbddPersonnels
         }
 
 
+
+        public List<Fonction> fetchallfonction()
+        {
+            return bdd.Fonctions.ToList();
+        }
+
     }
 
   

@@ -27,7 +27,7 @@ namespace AppTrombinoscope
 
         private void Connexion(object sender, RoutedEventArgs e)
         {
-            if(login.Text== "UtilisateurBDD" && mdp.Text == "Password1234@")
+            if(login.Text== "UtilisateurBDD" && mdp.Password == "Password1234@")
             {
                 bddpersonnels.Gestionnaire = true;
                 this.Close();
