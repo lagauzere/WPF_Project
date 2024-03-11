@@ -22,6 +22,10 @@ namespace AppTrombinoscope
         public VuePersonnel()
         {
             InitializeComponent();
+            this.MinWidth = 800;
+            this.MinHeight = 500;
+            this.MaxWidth =  800;
+            this.MaxHeight = 700;
         }
 
         private void save_Click(object sender, RoutedEventArgs e)

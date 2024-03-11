@@ -22,6 +22,10 @@ namespace AppTrombinoscope
         public VueServiceFonction()
         {
             InitializeComponent();
+            this.MinHeight = 500;
+            this.MinWidth = 800;
+            this.MaxHeight = 700;
+            this.MaxWidth = 800;
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)

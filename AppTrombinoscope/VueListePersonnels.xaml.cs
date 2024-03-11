@@ -22,6 +22,10 @@ namespace AppTrombinoscope
         public VueListePersonnels()
         {
             InitializeComponent();
+            this.MinWidth = 850;
+            this.MinHeight = 500;
+            this.MaxHeight = 700;
+            this.MaxWidth = 850;
         }
     }
 }

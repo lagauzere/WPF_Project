@@ -11,7 +11,7 @@
         <Label Content="Prénom du Personnel" HorizontalAlignment="Left" Margin="605,221,0,0" VerticalAlignment="Top" Width="134"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="605,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="605,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
-        <DataGrid HorizontalAlignment="Left" Height="386" Margin="21,23,0,0" VerticalAlignment="Top" Width="520">
+        <DataGrid HorizontalAlignment="Left" Margin="21,23,0,10" Width="520">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"></DataGridTextColumn>
