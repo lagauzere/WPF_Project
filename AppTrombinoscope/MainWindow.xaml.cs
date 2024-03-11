@@ -31,15 +31,16 @@ namespace AppTrombinoscope
         private void Connexion_Click(object sender, RoutedEventArgs e)
         {
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-            if (co.ConnexionStatus == true) {
+            if (co.ConnexionStatus == true)
+            {
                 Liste_du_Personnel.IsEnabled = true;
-                Gestion_Fonctions.IsEnabled = true;  
+                Gestion_Fonctions.IsEnabled = true;
                 Gestion_Services.IsEnabled = true;
                 Gestionnaire.IsEnabled = true;
             }
             else
             {
-                Liste_du_Personnel.IsEnabled =false;
+                Liste_du_Personnel.IsEnabled = false;
                 Gestion_Fonctions.IsEnabled = false;
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
@@ -61,13 +62,26 @@ namespace AppTrombinoscope
         private void Gestionnaire_Click(object sender, RoutedEventArgs e)
         {
             VueIdGestionnaire vue = new VueIdGestionnaire();
-                vue.Show();
+            vue.Show();
         }
 
         private void Gestion_Personnels_Click(object sender, RoutedEventArgs e)
         {
             VuePersonnel vue = new VuePersonnel();
             vue.Show();
+        }
+
+
+        private void ListePersonnel(object sender, RoutedEventArgs e)
+        {
+            VueListePersonnels vueListePersonnels = new VueListePersonnels();
+            vueListePersonnels.Show();
+        }
+
+        private void GestService_Click(object sender, RoutedEventArgs e)
+        {
+            VueServiceFonction vueService = new VueServiceFonction();
+            vueService.Show();
         }
     }
 }

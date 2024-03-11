@@ -15,22 +15,17 @@ using System.Windows.Shapes;
 namespace AppTrombinoscope
 {
     /// <summary>
-    /// Logique d'interaction pour VueServiceFonction.xaml
+    /// Logique d'interaction pour VueListePersonnels.xaml
     /// </summary>
-    public partial class VueServiceFonction : Window
+    public partial class VueListePersonnels : Window
     {
-        public VueServiceFonction()
+        public VueListePersonnels()
         {
             InitializeComponent();
+            this.MinWidth = 850;
             this.MinHeight = 500;
-            this.MinWidth = 800;
             this.MaxHeight = 700;
-            this.MaxWidth = 800;
-        }
-
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
+            this.MaxWidth = 850;
         }
     }
 }
