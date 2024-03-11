@@ -1,0 +1,11 @@
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csprojAssemblyReference.cache
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csproj.CoreCompileInputs.cache
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\DllbddPersonnels.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\DllbddPersonnels.pdb
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\Devart.Data.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\Devart.Data.Linq.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\Devart.Data.MySql.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\bin\Debug\Devart.Data.MySql.Linq.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.csproj.CopyComplete
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.dll
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\DllbddPersonnels\obj\Debug\DllbddPersonnels.pdb
