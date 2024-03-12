@@ -24,10 +24,10 @@ namespace AppTrombinoscope
         {
             InitializeComponent();
 
-            this.MinWidth = 850;
-            this.MinHeight = 500;
-            this.MaxHeight = 500;
-            this.MaxWidth = 850;
+            this.MinWidth = 500;
+            this.MinHeight = 300;
+            this.MaxHeight = 300;
+            this.MaxWidth = 500;
         }
 
         private void Connexion(object sender, RoutedEventArgs e)
