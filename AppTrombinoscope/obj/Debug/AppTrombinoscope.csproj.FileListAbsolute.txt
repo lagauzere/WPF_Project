@@ -34,7 +34,6 @@ C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.e
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.pdb
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\DllbddPersonnels.dll
-C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.Linq.dll
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.MySql.Linq.dll
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.dll
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.MySql.dll
