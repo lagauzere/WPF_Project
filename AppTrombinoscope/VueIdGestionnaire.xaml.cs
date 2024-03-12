@@ -23,6 +23,11 @@ namespace AppTrombinoscope
         public VueIdGestionnaire()
         {
             InitializeComponent();
+
+            this.MinWidth = 850;
+            this.MinHeight = 500;
+            this.MaxHeight = 500;
+            this.MaxWidth = 850;
         }
 
         private void Connexion(object sender, RoutedEventArgs e)

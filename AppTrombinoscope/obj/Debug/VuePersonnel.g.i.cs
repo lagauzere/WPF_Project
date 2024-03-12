@@ -113,12 +113,6 @@ namespace AppTrombinoscope {
             return;
             case 2:
             this.name = ((System.Windows.Controls.TextBox)(target));
-            
-            #line 14 "..\..\VuePersonnel.xaml"
-            this.name.TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.name_TextChanged);
-            
-            #line default
-            #line hidden
             return;
             case 3:
             this.phoneNumber = ((System.Windows.Controls.TextBox)(target));

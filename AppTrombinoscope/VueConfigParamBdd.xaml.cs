@@ -22,10 +22,6 @@ namespace AppTrombinoscope
         public VueConfigParamBdd()
         {
             InitializeComponent();
-            this.MinHeight = 500;
-            this.MinWidth = 800;
-            this.MaxHeight = 500;
-            this.MaxWidth = 800;
             user.Text = Properties.Settings.Default.UserName;
             port.Text = Properties.Settings.Default.Port;
             pwd.Password = Properties.Settings.Default.Password;

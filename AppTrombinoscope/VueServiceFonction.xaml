@@ -15,9 +15,9 @@
 
         <Label Content="Intitule du service" HorizontalAlignment="Left" Margin="320,56,0,0" VerticalAlignment="Top" Width="110"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,60,0,0"/>
-        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,100,0,0" Click="Button_Click"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,100,0,0"/>
         <Label Content="Intitule d'une fonction" HorizontalAlignment="Left" Margin="320,250,0,0" VerticalAlignment="Top" Width="150"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,250,0,0"/>
-        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,300,0,0" Click=" Add_Personnel"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,300,0,0" Click="Cancel_Click"/>
     </Grid>
 </Window>

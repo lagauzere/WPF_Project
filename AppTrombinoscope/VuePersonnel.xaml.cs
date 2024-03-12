@@ -12,8 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using DllbddPersonnels;
-using BddpersonnelContext;
-
 
 namespace AppTrombinoscope
 {
@@ -61,35 +59,11 @@ namespace AppTrombinoscope
         private void Save_Click(object sender, RoutedEventArgs e)
         {
 
+        }
 
-            bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-           
-
-
-            Personnel perso = new Personnel
-            {
-                Id = ,
-                Prenom = firstname.Text,
-                Nom = name.Text,
-                IdService =,
-                IdFonction = 0,
-                Telephone = phoneNumber.Text,
-                Photo = null
-            };
-            co.Bdd.Personnels.InsertOnSubmit(perso);
-            try
-            {
-                co.Bdd.SubmitChanges();
-            } catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-
-            }
-
+        private void firstname_TextChanged(object sender, TextChangedEventArgs e)
+        {
 
         }
-  
     }
-
-
 }
