@@ -30,3 +30,35 @@ Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\Ap
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.g.cs
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe.config
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.pdb
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\DllbddPersonnels.dll
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.Linq.dll
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.MySql.Linq.dll
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.dll
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\Devart.Data.MySql.dll
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\DllbddPersonnels.pdb
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.AssemblyReference.cache
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\MainWindow.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueConfigParamBdd.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueIdGestionnaire.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueListePersonnels.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VuePersonnel.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueServiceFonction.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\App.g.cs
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope_MarkupCompile.cache
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope_MarkupCompile.lref
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\MainWindow.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueConfigParamBdd.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueIdGestionnaire.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueListePersonnels.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VuePersonnel.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\VueServiceFonction.baml
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.g.resources
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.Properties.Resources.resources
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.GenerateResource.cache
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CoreCompileInputs.cache
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CopyComplete
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.exe
+C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb

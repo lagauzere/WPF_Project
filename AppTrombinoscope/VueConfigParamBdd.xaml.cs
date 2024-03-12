@@ -22,13 +22,9 @@ namespace AppTrombinoscope
         public VueConfigParamBdd()
         {
             InitializeComponent();
-            this.MinHeight = 500;
-            this.MinWidth = 800;
-            this.MaxHeight = 500;
-            this.MaxWidth = 800;
             user.Text = Properties.Settings.Default.UserName;
             port.Text = Properties.Settings.Default.Port;
-            pwd.Password = Properties.Settings.Default.Password;
+            pwd.Text = Properties.Settings.Default.Password;
             ip.Text = Properties.Settings.Default.Ipaddress;
 
         }
@@ -36,7 +32,7 @@ namespace AppTrombinoscope
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Properties.Settings.Default.UserName = user.Text; 
-            Properties.Settings.Default.Password=pwd.Password;
+            Properties.Settings.Default.Password=pwd.Text;
             Properties.Settings.Default.Port=port.Text;
             Properties.Settings.Default.Ipaddress = ip.Text;
             Properties.Settings.Default.Save();
