@@ -22,10 +22,31 @@ namespace AppTrombinoscope
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private bddpersonnels bdd;
         public MainWindow()
         {
             InitializeComponent();
             Gestion_Personnels.IsEnabled = true;
+            this.MinHeight = 600;
+            this.MinWidth = 850;
+            this.MaxWidth = 850;
+            try
+            {
+                bdd = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress,
+                    Properties.Settings.Default.Port);
+                List<BddpersonnelContext.Service> list = bdd.fetchallservice();
+                this.ListService.ItemsSource = list;
+                List<BddpersonnelContext.Personnel> listp = bdd.fetchallpersonnels();
+                this.ListPersonnel.ItemsSource = listp;
+                List<BddpersonnelContext.Fonction> listf = bdd.fetchallfonction();
+                this.ListFonction.ItemsSource = listf;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
 
         private void Connexion_Click(object sender, RoutedEventArgs e)
@@ -45,6 +66,7 @@ namespace AppTrombinoscope
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
             }
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

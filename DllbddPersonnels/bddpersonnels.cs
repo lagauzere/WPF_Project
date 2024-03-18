@@ -40,12 +40,24 @@ namespace DllbddPersonnels
             return false;
         }
 
+        public List<Service> fetchallservice()
+        {
+            return bdd.Services.ToList();
+        }
 
+        public List<Personnel> fetchallpersonnels()
+        {
+            return bdd.Personnels.ToList();
+        }
 
         public List<Fonction> fetchallfonction()
         {
             return bdd.Fonctions.ToList();
         }
+
+
+
+    
 
     }
 

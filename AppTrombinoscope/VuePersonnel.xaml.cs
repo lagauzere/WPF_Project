@@ -21,9 +21,14 @@ namespace AppTrombinoscope
     /// </summary>
     public partial class VuePersonnel : Window
     {
+        private bddpersonnels bdd;
         public VuePersonnel()
         {
             InitializeComponent();
+            this.MinWidth = 800;
+            this.MinHeight = 500;
+            this.MaxWidth = 800;
+            this.MaxHeight = 700;
             if (firstname.Text != "" && name.Text != "" && phoneNumber.Text != "")
             {
                 save.IsEnabled = true;
@@ -31,6 +36,19 @@ namespace AppTrombinoscope
            firstname.TextChanged += new TextChangedEventHandler(TextChanged);
            name.TextChanged += new TextChangedEventHandler(TextChanged);
            phoneNumber.TextChanged += new TextChangedEventHandler(TextChanged);
+            try
+            {
+                bdd = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress,
+                    Properties.Settings.Default.Port);
+                List<BddpersonnelContext.Service> lists = bdd.fetchallservice();
+                this.ListService.ItemsSource = lists;
+                List<BddpersonnelContext.Fonction> listf = bdd.fetchallfonction();
+                this.ListFonction.ItemsSource = listf;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void TextChanged(object Sender, TextChangedEventArgs e)

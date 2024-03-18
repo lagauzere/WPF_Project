@@ -30,6 +30,7 @@ Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\Ap
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.g.cs
 Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.baml
+<<<<<<< HEAD
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe.config
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\bin\Debug\AppTrombinoscope.pdb
@@ -61,3 +62,37 @@ C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.c
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CopyComplete
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.exe
 C:\cours\semestre4.2024\R4.01\tber\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb
+=======
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe.config
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\AppTrombinoscope.exe
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\AppTrombinoscope.pdb
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\DllbddPersonnels.dll
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\Devart.Data.Linq.dll
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\Devart.Data.MySql.Linq.dll
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\Devart.Data.dll
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\Devart.Data.MySql.dll
+Z:\R4.01\WPF_Project\AppTrombinoscope\bin\Debug\DllbddPersonnels.pdb
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csprojAssemblyReference.cache
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\MainWindow.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueConfigParamBdd.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueIdGestionnaire.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VuePersonnel.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueServiceFonction.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\App.g.cs
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope_MarkupCompile.cache
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope_MarkupCompile.lref
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\MainWindow.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueConfigParamBdd.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueIdGestionnaire.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueListePersonnels.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VuePersonnel.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\VueServiceFonction.baml
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.g.resources
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.Properties.Resources.resources
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.GenerateResource.cache
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CoreCompileInputs.cache
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.csproj.CopyComplete
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.exe
+Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\AppTrombinoscope.pdb
+>>>>>>> paul2

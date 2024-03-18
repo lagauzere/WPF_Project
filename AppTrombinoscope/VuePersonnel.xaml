@@ -19,8 +19,7 @@
         <Button Content="Annuler" HorizontalAlignment="Left" Margin="555,0,0,18" Width="112" Height="27" VerticalAlignment="Bottom" Click="Cancel_Click"/>
         <Label Content="Choisir le service" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="156,210,0,0" Width="112"/>
         <Label Content="Choisir la fonction" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="555,210,0,0" Width="112"/>
-        <ListBox Name="service" HorizontalAlignment="Left" Margin="130,237,0,57" Width="163" SelectionChanged="ListBox_SelectionChanged"/>
-        <ListBox Name="fonction" HorizontalAlignment="Left" Margin="533,236,0,58" Width="163"/>
-
+        <ListBox x:Name="ListService" HorizontalAlignment="Left" Margin="130,237,0,57" Width="163" DisplayMemberPath="Intitule"/>
+        <ListBox x:Name="ListFonction" HorizontalAlignment="Left" Margin="533,236,0,58" Width="163" DisplayMemberPath="Intitule"/>
     </Grid>
 </Window>
