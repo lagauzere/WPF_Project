@@ -14,7 +14,7 @@
             <MenuItem Header="Connexion BDD" Click="Connexion_Click" Width="103" Height="35"/>
             <MenuItem Name="Liste_du_Personnel" Click="ListePersonnel" IsEnabled="False" Header="Liste du Personnel" Width="136" Height="35"/>
             <MenuItem Name="Gestion_Services"  Click="GestService_Click" IsEnabled="False" Header="Gestion : Services" Width="112" Height="35"/>
-            <MenuItem Name="Gestion_Fonctions" IsEnabled="False" Header="Gestion : Fonctions" Width="121" Height="35"/>
+            <MenuItem Name="Gestion_Fonctions" IsEnabled="False" Header="Gestion : Fonctions" Width="121" Height="35" Click="Gestion_Fonctions_Click"/>
             <MenuItem Name="Gestion_Personnels" IsEnabled="False" Header="Gestion : Personnels" Width="128" Height="35" Click="Gestion_Personnels_Click"/>
             <MenuItem Name="Gestionnaire" IsEnabled="False" Header="Gestionnaire" Width="85" Height="35" Click="Gestionnaire_Click"/>
             <MenuItem Header="Paramètres BDD" Width="112" Height="35" Click="ParamBdd_Click"/>

@@ -105,5 +105,11 @@ namespace AppTrombinoscope
             VueServiceFonction vueService = new VueServiceFonction();
             vueService.Show();
         }
+
+        private void Gestion_Fonctions_Click(object sender, RoutedEventArgs e)
+        {
+            VueFonction vue = new VueFonction();
+            vue.Show();
+        }
     }
 }

@@ -55,6 +55,13 @@ namespace DllbddPersonnels
             return bdd.Fonctions.ToList();
         }
 
+        public void deleteFonction(String param)
+        {
+            Fonction f = bdd.Fonctions.Single(c => c.Intitule == param);
+            bdd.Fonctions.DeleteOnSubmit(f);
+            bdd.SubmitChanges();
+        }
+
 
     }
 
