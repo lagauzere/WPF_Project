@@ -88,6 +88,30 @@ namespace AppTrombinoscope {
         #line default
         #line hidden
         
+        
+        #line 35 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox ListService;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 36 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox ListPersonnel;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 37 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox ListFonction;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -205,6 +229,15 @@ namespace AppTrombinoscope {
             
             #line default
             #line hidden
+            return;
+            case 12:
+            this.ListService = ((System.Windows.Controls.ListBox)(target));
+            return;
+            case 13:
+            this.ListPersonnel = ((System.Windows.Controls.ListBox)(target));
+            return;
+            case 14:
+            this.ListFonction = ((System.Windows.Controls.ListBox)(target));
             return;
             }
             this._contentLoaded = true;

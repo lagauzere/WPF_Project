@@ -40,6 +40,22 @@ namespace AppTrombinoscope {
     /// </summary>
     public partial class VueServiceFonction : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 14 "..\..\VueServiceFonction.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ListBox ListService;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 20 "..\..\VueServiceFonction.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox NewService;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -71,12 +87,10 @@ namespace AppTrombinoscope {
             switch (connectionId)
             {
             case 1:
-            
-            #line 21 "..\..\VueServiceFonction.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Cancel_Click);
-            
-            #line default
-            #line hidden
+            this.ListService = ((System.Windows.Controls.ListBox)(target));
+            return;
+            case 2:
+            this.NewService = ((System.Windows.Controls.TextBox)(target));
             return;
             }
             this._contentLoaded = true;

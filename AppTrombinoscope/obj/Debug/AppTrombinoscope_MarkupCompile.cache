@@ -4,20 +4,16 @@
 winexe
 C#
 .cs
-Z:\R4.01\WPF_Project\AppTrombinoscope\obj\Debug\
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\obj\Debug\
 AppTrombinoscope
 none
 false
 DEBUG;TRACE
-Z:\R4.01\WPF_Project\AppTrombinoscope\App.xaml
+Z:\cours\semestre4.2024\R4.01\tp noté\WPF_Project\AppTrombinoscope\App.xaml
 61331812381
 
 11-273152980
-<<<<<<< HEAD
 15-1741966796
-=======
-14-1124853438
->>>>>>> paul2
 MainWindow.xaml;VueConfigParamBdd.xaml;VueIdGestionnaire.xaml;VueListePersonnels.xaml;VuePersonnel.xaml;VueServiceFonction.xaml;
 
 False
