@@ -26,7 +26,10 @@ namespace AppTrombinoscope
             port.Text = Properties.Settings.Default.Port;
             pwd.Text = Properties.Settings.Default.Password;
             ip.Text = Properties.Settings.Default.Ipaddress;
-
+            this.MinHeight = 500;
+            this.MinWidth = 700;
+            this.MaxWidth = 700;
+            this.MaxHeight = 500;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

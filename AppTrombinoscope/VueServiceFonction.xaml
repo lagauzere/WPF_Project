@@ -10,14 +10,14 @@
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Label Content="Services" HorizontalAlignment="Left" Margin="90,56,0,0" VerticalAlignment="Top" />
-        <ListBox HorizontalAlignment="Left" Width="164" Margin="37,87,0,20" ItemsSource="{Binding}" DisplayMemberPath="Id"/>
+        <Label Content="Services" HorizontalAlignment="Left" Margin="94,29,0,0" VerticalAlignment="Top" />
+        <ListBox x:Name="ListService" HorizontalAlignment="Left" Width="164" Margin="44,60,0,47" DisplayMemberPath="Intitule"/>
 
-        <Label Content="Intitule du service" HorizontalAlignment="Left" Margin="320,56,0,0" VerticalAlignment="Top" Width="110"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,60,0,0"/>
-        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,100,0,0"/>
-        <Label Content="Intitule d'une fonction" HorizontalAlignment="Left" Margin="320,250,0,0" VerticalAlignment="Top" Width="150"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="472,250,0,0"/>
-        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="525,300,0,0" Click="Cancel_Click"/>
+        <Label Content="Intitule du service" HorizontalAlignment="Left" Margin="337,29,0,0" VerticalAlignment="Top" Width="110"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,60,0,0" Text="{Binding ElementName= ListService, Path=SelectedItem.Intitule}"/>
+        <Button Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,97,0,0"/>
+        <Label Content="Nouveau service" HorizontalAlignment="Left" Margin="346,219,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBox x:Name="NewService" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,250,0,0"/>
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,289,0,0" />
     </Grid>
 </Window>

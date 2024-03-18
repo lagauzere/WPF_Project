@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using DllbddPersonnels;
 
 namespace AppTrombinoscope
 {
@@ -19,18 +20,35 @@ namespace AppTrombinoscope
     /// </summary>
     public partial class VueServiceFonction : Window
     {
+        private bddpersonnels bdd;
         public VueServiceFonction()
         {
             InitializeComponent();
             this.MinHeight = 500;
-            this.MinWidth = 800;
-            this.MaxHeight = 700;
-            this.MaxWidth = 800;
+            this.MinWidth = 600;
+            this.MaxHeight =700;
+            this.MaxWidth = 600;
+            try
+            {
+                bdd = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress,
+                    Properties.Settings.Default.Port);
+                List<BddpersonnelContext.Service> list = bdd.fetchallservice();
+                this.ListService.ItemsSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void TextBox_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
         }
     }
 }
