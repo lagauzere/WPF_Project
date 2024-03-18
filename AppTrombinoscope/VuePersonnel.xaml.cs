@@ -59,13 +59,10 @@ namespace AppTrombinoscope
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("wesh");
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-
-            Personnel p = new Personnel { Telephone = "36303630", Prenom = "test", Nom = "test", IdFonction=1 , IdService= 1};
+            Personnel p = new Personnel { Telephone = phoneNumber.Text, Prenom = firstname.Text , Nom = name.Text, IdFonction= 1 , IdService= 1};
             co.Bdd.Connection.Open();
             co.Bdd.Personnels.InsertOnSubmit(p);
-
             try{
                 co.Bdd.SubmitChanges();
             }catch (Exception ex)
@@ -76,6 +73,11 @@ namespace AppTrombinoscope
         }
 
         private void firstname_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
