@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using BddpersonnelContext;
 using DllbddPersonnels;
 
 namespace AppTrombinoscope
@@ -49,6 +50,27 @@ namespace AppTrombinoscope
         private void TextBox_SourceUpdated(object sender, DataTransferEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
+            Service c = new Service { Intitule = NewService.Text };
+
+
+            co.Bdd.Connection.Open();
+            co.Bdd.Services.InsertOnSubmit(c);
+
+            try
+            {
+                co.Bdd.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            co.Bdd.Connection.Close();
+            this.Close();
         }
     }
 }

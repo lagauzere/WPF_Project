@@ -18,6 +18,6 @@
         <Button Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,97,0,0"/>
         <Label Content="Nouveau service" HorizontalAlignment="Left" Margin="346,219,0,0" VerticalAlignment="Top" Width="109"/>
         <TextBox x:Name="NewService" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,250,0,0"/>
-        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,289,0,0" />
+        <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,289,0,0" Click="Button_Click" />
     </Grid>
 </Window>

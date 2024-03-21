@@ -56,5 +56,26 @@ namespace AppTrombinoscope
         {
             bdd.deleteFonction(this.nomFonctionSelectionner.Text);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
+            Fonction f = new Fonction { Intitule = NewService.Text };
+
+
+            co.Bdd.Connection.Open();
+            co.Bdd.Fonctions.InsertOnSubmit(f);
+
+            try
+            {
+                co.Bdd.SubmitChanges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            co.Bdd.Connection.Close();
+            this.Close();
+        }
     }
 }
