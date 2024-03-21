@@ -57,9 +57,32 @@ namespace DllbddPersonnels
 
         public void deleteFonction(String param)
         {
-            Fonction f = bdd.Fonctions.Single(c => c.Intitule == param);
-            bdd.Fonctions.DeleteOnSubmit(f);
-            bdd.SubmitChanges();
+            try
+            {
+                Fonction f = bdd.Fonctions.Single(c => c.Intitule == param);
+                bdd.Fonctions.DeleteOnSubmit(f);
+                bdd.SubmitChanges();
+            }
+            catch
+            {
+                MessageBox.Show("Impossible de supprimer: Veuillez modifiez toutes les personnes liés à cette fonction");
+            }
+            
+        }
+
+        public void deleteService(String param)
+        {
+            try
+            {
+                Service s = bdd.Services.Single(c => c.Intitule == param);
+                bdd.Services.DeleteOnSubmit(s);
+                bdd.SubmitChanges();
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Impossible de supprimer: Veuillez modifiez toutes les personnes liés à ce service ");
+            }
+
         }
 
 

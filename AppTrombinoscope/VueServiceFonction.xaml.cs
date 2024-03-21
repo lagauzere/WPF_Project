@@ -52,6 +52,7 @@ namespace AppTrombinoscope
 
         }
 
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
@@ -71,6 +72,11 @@ namespace AppTrombinoscope
             }
             co.Bdd.Connection.Close();
             this.Close();
+        }
+        private void Delete_click(object sender, RoutedEventArgs e)
+        {
+            bdd.deleteService(this.nomServiceSelectionner.Text);
+
         }
     }
 }
