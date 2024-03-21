@@ -35,6 +35,8 @@ namespace AppTrombinoscope
             if(login.Text== "UtilisateurBDD" && mdp.Password == "Password1234@")
             {
                 bddpersonnels.Gestionnaire = true;
+                MainWindow v = new MainWindow();
+                v.Show();
                 this.Close();
             }
             else
