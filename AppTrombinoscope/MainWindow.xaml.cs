@@ -66,7 +66,13 @@ namespace AppTrombinoscope
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
             }
-            
+            List<BddpersonnelContext.Service> lists = bdd.fetchallservice();
+            this.ListService.ItemsSource = lists;
+            List<BddpersonnelContext.Fonction> listf = bdd.fetchallfonction();
+            this.ListFonction.ItemsSource = listf;
+            List<BddpersonnelContext.Personnel> listp = bdd.fetchallpersonnels();
+            this.ListPersonnel.ItemsSource = listp;
+
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -77,20 +83,22 @@ namespace AppTrombinoscope
         private void ParamBdd_Click(object sender, RoutedEventArgs e)
         {
             VueConfigParamBdd vueConfigbdd = new VueConfigParamBdd();
-
             vueConfigbdd.Show();
+            this.Close();
         }
 
         private void Gestionnaire_Click(object sender, RoutedEventArgs e)
         {
             VueIdGestionnaire vue = new VueIdGestionnaire();
             vue.Show();
+            this.Close();
         }
 
         private void Gestion_Personnels_Click(object sender, RoutedEventArgs e)
         {
             VuePersonnel vue = new VuePersonnel();
             vue.Show();
+            this.Close();
         }
 
 
@@ -98,18 +106,21 @@ namespace AppTrombinoscope
         {
             VueListePersonnels vueListePersonnels = new VueListePersonnels();
             vueListePersonnels.Show();
+            this.Close();
         }
 
         private void GestService_Click(object sender, RoutedEventArgs e)
         {
             VueServiceFonction vueService = new VueServiceFonction();
             vueService.Show();
+            this.Close();
         }
 
         private void Gestion_Fonctions_Click(object sender, RoutedEventArgs e)
         {
             VueFonction vue = new VueFonction();
             vue.Show();
+            this.Close();
         }
     }
 }
