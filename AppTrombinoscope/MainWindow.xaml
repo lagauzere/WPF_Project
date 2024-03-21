@@ -25,12 +25,13 @@
         <Label Content="Téléphone :" HorizontalAlignment="Left" Margin="526,375,0,0" VerticalAlignment="Top"/>
         <Label Content="Fonctions :" HorizontalAlignment="Left" Margin="526,336,0,0" VerticalAlignment="Top"/>
         <Label  Content="Service :" HorizontalAlignment="Left" Margin="526,293,0,0" VerticalAlignment="Top"/>
+        <Image  x:Name="PhotoPersonnel"  HorizontalAlignment="Left" Height="109" Margin="601,168,0,0" VerticalAlignment="Top" Width="120" Source="{Binding ElementName=ListPersonnel, Path=SelectedItem.Photo}"/>
         <Label Content="Prénom :" HorizontalAlignment="Left" Margin="526,129,0,0" VerticalAlignment="Top"/>
         <Label Content="Nom :" HorizontalAlignment="Left" Margin="526,90,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="601,94,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.Nom}" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="601,134,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.Prenom}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox Name="service" HorizontalAlignment="Left" Margin="601,297,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.IdService.Intitule}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Margin="601,340,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListFonction, Path=SelectedItem.Intitule}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox Name="service" HorizontalAlignment="Left" Margin="601,297,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.Service.Intitule}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Margin="601,340,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.Fonction.Intitule}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Margin="601,379,0,0" TextWrapping="Wrap" Text="{Binding ElementName=ListPersonnel, Path=SelectedItem.Telephone}" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
         <ListBox x:Name="ListService" HorizontalAlignment="Left" Margin="41,134,0,100" Width="126" DisplayMemberPath="Intitule"/>
         <ListBox x:Name="ListPersonnel" HorizontalAlignment="Left" Margin="191,134,0,100" Width="119" DisplayMemberPath="Nom"/>

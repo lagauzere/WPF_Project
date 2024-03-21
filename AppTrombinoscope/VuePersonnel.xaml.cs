@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using BddpersonnelContext;
 using DllbddPersonnels;
+using Microsoft.Win32;
 
 namespace AppTrombinoscope
 {
@@ -22,6 +24,7 @@ namespace AppTrombinoscope
     public partial class VuePersonnel : Window
     {
         private bddpersonnels bdd;
+        Byte[] img = null;
         public VuePersonnel()
         {
             InitializeComponent();
@@ -53,7 +56,7 @@ namespace AppTrombinoscope
 
         private void TextChanged(object Sender, TextChangedEventArgs e)
         {
-            if (firstname.Text != "" && name.Text != "" && phoneNumber.Text != "")
+            if (firstname.Text != "" && name.Text != "" && phoneNumber.Text != "" && ListFonction.SelectedItem!=null && ListService!= null )
             {
                 save.IsEnabled = true;
             }
@@ -64,11 +67,6 @@ namespace AppTrombinoscope
         }
 
 
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
         private void Image_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start(@"C:");
@@ -78,10 +76,16 @@ namespace AppTrombinoscope
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-            Personnel p = new Personnel { Telephone = phoneNumber.Text, Prenom = firstname.Text , Nom = name.Text, IdFonction= ((Fonction)ListFonction.SelectedItem).Id, IdService= ((Service)ListService.SelectedItem).Id };
+            Personnel p = new Personnel();
+            if (PhotoPersonnel.Source == null)
+            {
+                p = new Personnel { Telephone = phoneNumber.Text, Prenom = firstname.Text, Nom = name.Text, IdFonction = ((Fonction)ListFonction.SelectedItem).Id, IdService = ((Service)ListService.SelectedItem).Id };
+            }
+            else {
+                p = new Personnel { Telephone = phoneNumber.Text, Prenom = firstname.Text, Nom = name.Text, IdFonction = ((Fonction)ListFonction.SelectedItem).Id, IdService = ((Service)ListService.SelectedItem).Id, Photo= img };
+            }
 
-            
-     
+
             co.Bdd.Connection.Open();
             co.Bdd.Personnels.InsertOnSubmit(p);
             
@@ -92,6 +96,9 @@ namespace AppTrombinoscope
                 MessageBox.Show(ex.Message);
             }
             co.Bdd.Connection.Close();
+            MainWindow main = new MainWindow();
+            main.Show();
+
             this.Close();
         }
 
@@ -100,9 +107,63 @@ namespace AppTrombinoscope
 
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
         {
 
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+
+        }
+
+        private void ChoixPhoto_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            if(openFileDialog.ShowDialog() == true)
+            {
+                string file = openFileDialog.FileName;
+                BitmapImage image = new BitmapImage();
+                image.BeginInit();
+                image.UriSource = new Uri(file);
+                image.EndInit();
+                byte[] data;
+                JpegBitmapEncoder encoder = new JpegBitmapEncoder();
+                encoder.Frames.Add(BitmapFrame.Create(image));
+                using(MemoryStream ms = new MemoryStream())
+                {
+                    encoder.Save(ms);
+                    data = ms.ToArray();
+                }
+                img = data;
+                this.PhotoPersonnel.Source = image;
+            }
+
+        }
+
+        private void ListService_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (firstname.Text != "" && name.Text != "" && phoneNumber.Text != "" && ListFonction.SelectedItem != null && ListService != null)
+            {
+                save.IsEnabled = true;
+            }
+            else
+            {
+                save.IsEnabled = false;
+            }
+
+        }
+
+        private void ListFonction_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (firstname.Text != "" && name.Text != "" && phoneNumber.Text != "" && ListFonction.SelectedItem != null && ListService != null)
+            {
+                save.IsEnabled = true;
+            }
+            else
+            {
+                save.IsEnabled = false;
+            }
         }
     }
 }

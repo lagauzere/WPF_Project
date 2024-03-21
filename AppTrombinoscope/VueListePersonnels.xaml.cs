@@ -27,5 +27,15 @@ namespace AppTrombinoscope
             this.MaxHeight = 700;
             this.MaxWidth = 850;
         }
+
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
+
     }
+
 }

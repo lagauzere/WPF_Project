@@ -12,7 +12,7 @@
         <Label Content="Mot de passe" HorizontalAlignment="Left" Margin="102,142,0,0" VerticalAlignment="Top" Height="24" Width="90"/>
         <PasswordBox Name="mdp" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="272,147,0,0" Height="19" Width="134"/>
         <Button Content="Connexion" HorizontalAlignment="Left" Margin="135,212,0,0" VerticalAlignment="Top" Width="75" Click="Connexion"/>
-        <Button Content="Annuler" HorizontalAlignment="Left" Margin="259,212,0,0" VerticalAlignment="Top" Width="75" Click="Annulerk"/>
+        <Button Content="Annuler" HorizontalAlignment="Left" Margin="259,212,0,0" VerticalAlignment="Top" Width="75" Click="Cancel_Click"/>
 
     </Grid>
 </Window>
