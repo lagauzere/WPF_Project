@@ -54,6 +54,9 @@ namespace AppTrombinoscope
         private void Delete_click(object sender, RoutedEventArgs e)
         {
             bdd.deleteService(this.nomServiceSelectionner.Text);
+            List<BddpersonnelContext.Service> list = bdd.fetchallservice();
+            this.ListService.ItemsSource = list;
+
         }
     }
 }

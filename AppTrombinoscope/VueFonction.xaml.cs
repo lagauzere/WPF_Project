@@ -55,6 +55,8 @@ namespace AppTrombinoscope
         private void Delete_click(object sender, RoutedEventArgs e)
         {
             bdd.deleteFonction(this.nomFonctionSelectionner.Text);
+            List<BddpersonnelContext.Fonction> list = bdd.fetchallfonction();
+            this.ListFonctions.ItemsSource = list;
         }
     }
 }
