@@ -71,13 +71,14 @@ namespace AppTrombinoscope
             try
             {
                 co.Bdd.SubmitChanges();
+                List<BddpersonnelContext.Fonction> list = bdd.fetchallfonction();
+                this.ListFonctions.ItemsSource = list;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             co.Bdd.Connection.Close();
-            this.Close();
         }
     }
 }

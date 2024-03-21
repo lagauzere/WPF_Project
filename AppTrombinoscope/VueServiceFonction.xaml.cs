@@ -65,13 +65,13 @@ namespace AppTrombinoscope
             try
             {
                 co.Bdd.SubmitChanges();
+                List<BddpersonnelContext.Service> list = bdd.fetchallservice();
+                this.ListService.ItemsSource = list;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            co.Bdd.Connection.Close();
-            this.Close();
         }
         private void Delete_click(object sender, RoutedEventArgs e)
         {
