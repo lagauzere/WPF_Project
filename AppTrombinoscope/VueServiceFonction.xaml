@@ -14,8 +14,8 @@
         <ListBox x:Name="ListService" HorizontalAlignment="Left" Width="164" Margin="44,60,0,47" DisplayMemberPath="Intitule"/>
 
         <Label Content="Intitule du service" HorizontalAlignment="Left" Margin="337,29,0,0" VerticalAlignment="Top" Width="110"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,60,0,0" Text="{Binding ElementName= ListService, Path=SelectedItem.Intitule}"/>
-        <Button Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,97,0,0"/>
+        <TextBox x:Name="nomServiceSelectionner" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,60,0,0" Text="{Binding ElementName= ListService, Path=SelectedItem.Intitule}"/>
+        <Button  Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,97,0,0" Click="Delete_click"/>
         <Label Content="Nouveau service" HorizontalAlignment="Left" Margin="346,219,0,0" VerticalAlignment="Top" Width="109"/>
         <TextBox x:Name="NewService" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,250,0,0"/>
         <Button Content="Ajouter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,289,0,0" />
