@@ -69,12 +69,13 @@ namespace AppTrombinoscope
         private void Filter_Click(object sender, RoutedEventArgs e)
         {
             this.nomfilter.IsEnabled = true;
-            this.prenomfilter.IsEnabled = true;
+            this.servicefilter.IsEnabled = true;
+            this.Fonctionfilter.IsEnabled = true;
         }
 
         private void FilterRecherche_Click(object sender, RoutedEventArgs e)
         {
-            this.ListPersonne.ItemsSource = bdd.fetchallpersonnelsfiltrer(this.nomfilter.Text, this.prenomfilter.Text);
+            this.ListPersonne.ItemsSource = bdd.fetchallpersonnelsfiltrer(this.nomfilter.Text, this.servicefilter.Text, this.Fonctionfilter.Text);
         }
     }
 

@@ -31,10 +31,12 @@
         <Button  Content="Page principale" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="26,10,0,0" Click="Cancel_Click"/>
         <Button  Content="Filtrer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="600,174,0,0" Click="Filter_Click"/>
         <Label Content="Filtrer : Nom du Personnel" HorizontalAlignment="Left" Margin="587,199,0,0" VerticalAlignment="Top" Width="155"/>
-        <Label Content="Filtrer : Prénom du Personnel" HorizontalAlignment="Left" Margin="587,263,0,0" VerticalAlignment="Top" Width="167"/>
+        <Label Content="Filtrer : Fonction du Personnel" HorizontalAlignment="Left" Margin="578,263,0,0" VerticalAlignment="Top" Width="176"/>
         <TextBox x:Name="nomfilter" HorizontalAlignment="Left" Height="23" Margin="600,230,0,0" TextWrapping="Wrap" IsEnabled="False" VerticalAlignment="Top" Width="130" Text=""/>
-        <TextBox x:Name="prenomfilter" HorizontalAlignment="Left" Height="23" Margin="600,294,0,0" TextWrapping="Wrap" IsEnabled="False" Text="" VerticalAlignment="Top" Width="130"/>
-        <Button  Content="Rechercher" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="600,333,0,0" Click="FilterRecherche_Click"/>
+        <TextBox x:Name="Fonctionfilter" HorizontalAlignment="Left" Height="23" Margin="600,294,0,0" TextWrapping="Wrap" IsEnabled="False" Text="" VerticalAlignment="Top" Width="130"/>
+        <Button  Content="Rechercher" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="595,389,0,0" Click="FilterRecherche_Click"/>
+        <Label Content="Filtrer : Service du Personnel" HorizontalAlignment="Left" Margin="578,321,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="servicefilter" HorizontalAlignment="Left" Height="23" Margin="600,352,0,0" TextWrapping="Wrap" IsEnabled="False" Text="" VerticalAlignment="Top" Width="130"/>
 
     </Grid>
 </Window>

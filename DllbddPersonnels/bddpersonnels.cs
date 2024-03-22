@@ -85,22 +85,37 @@ namespace DllbddPersonnels
 
         }
 
-        public List<Personnel> fetchallpersonnelsfiltrer(String nom, String prenom)
+        public List<Personnel> fetchallpersonnelsfiltrer(String nom, String service, String fonction)
         {
-            if(prenom == "" && nom != "")
+            if(service == "" && nom != "" && fonction == "")
             {
                 return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).ToList();
             }
-            else if(prenom != "" && nom == "")
+            else if(service!= "" && nom == "" && fonction == "")
             {
-                return bdd.Personnels.Where(Personnel => Personnel.Prenom == prenom).ToList();
+                return bdd.Personnels.Where(Personnel => Personnel.Service.Intitule == service).ToList();
             }
-            else if (prenom != "" && nom != "")
+            else if (service == "" && nom == "" && fonction != "")
             {
-                return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).Where(Personnel => Personnel.Prenom == prenom).ToList();
+                return bdd.Personnels.Where(Personnel => Personnel.Fonction.Intitule == fonction).ToList();
             }
-            else 
-                return bdd.Personnels.ToList();
+            else if (service != "" && nom != "" && fonction == "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Service.Intitule == service).Where(Personnel => Personnel.Nom == nom).ToList();
+            }
+            else if (service != "" && nom == "" && fonction != "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Service.Intitule == service).Where(Personnel => Personnel.Fonction.Intitule == fonction).ToList();
+            }
+            else if (service == "" && nom != "" && fonction != "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).Where(Personnel => Personnel.Fonction.Intitule == fonction).ToList();
+            }
+            else if (service != "" && nom != "" && fonction != "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).Where(Personnel => Personnel.Service.Intitule == service).Where(Personnel => Personnel.Fonction.Intitule == fonction).ToList();
+            }
+            return bdd.Personnels.ToList();
 
         }
 
