@@ -11,7 +11,7 @@
         <ListBox x:Name="ListFonctions" HorizontalAlignment="Left" Width="164" Margin="44,60,0,47" DisplayMemberPath="Intitule"/>
 
         <Label Content="Intitule de la fonction" HorizontalAlignment="Left" Margin="337,29,0,0" VerticalAlignment="Top" Width="125"/>
-        <TextBox x:Name="nomFonctionSelectionner" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,60,0,0" Text="{Binding SelectedItem.Intitule, ElementName=ListFonctions}"/>
+        <TextBox x:Name="nomFonctionSelectionner" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,60,0,0" Text="{Binding SelectedItem.Intitule, ElementName=ListFonctions}" IsEnabled="False"/>
         <Button Content="Supprimer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="337,97,0,0" Click="Delete_click"/>
         <Label Content="Nouvelle fonction" HorizontalAlignment="Left" Margin="346,219,0,0" VerticalAlignment="Top" Width="109"/>
         <TextBox x:Name="NewService" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="243" Margin="270,250,0,0"/>

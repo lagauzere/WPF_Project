@@ -7,22 +7,34 @@
         mc:Ignorable="d"
         Title="VueListePersonnels" Height="450" Width="800">
     <Grid>
-        <Label Content="Nom du Personnel" HorizontalAlignment="Left" Margin="615,76,0,0" VerticalAlignment="Top" Width="110"/>
-        <Label Content="Prénom du Personnel" HorizontalAlignment="Left" Margin="605,221,0,0" VerticalAlignment="Top" Width="134"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="605,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="605,252,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
-        <DataGrid HorizontalAlignment="Left" Margin="26,35,0,10" Width="520">
+        <Label Content="Nom du Personnel" HorizontalAlignment="Left" Margin="610,35,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label Content="Prénom du Personnel" HorizontalAlignment="Left" Margin="600,99,0,0" VerticalAlignment="Top" Width="134"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="600,66,0,0" TextWrapping="Wrap" IsEnabled="False" VerticalAlignment="Top" Width="130" Text="{Binding ElementName= ListPersonne, Path=SelectedItem.Nom}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="600,130,0,0" TextWrapping="Wrap" IsEnabled="False" Text="{Binding ElementName= ListPersonne, Path=SelectedItem.Prenom}" VerticalAlignment="Top" Width="130"/>
+        <DataGrid x:Name="ListPersonne" HorizontalAlignment="Left" Margin="26,35,0,10" Width="520" AutoGenerateColumns="False" DisplayMemberPath="Intitile">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Nom" Binding="{Binding Nom}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Prenom" Binding="{Binding Prenom}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Photo" Binding="{Binding Photo}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Service" Binding="{Binding Service}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Fonction" Binding="{Binding Fonction}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Photo">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding Photo}" Width="150"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Service" Binding="{Binding Service.Intitule}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Fonction" Binding="{Binding Fonction.Intitule}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Téléphone" Binding="{Binding Telephone}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button  Content="Page principale" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="26,10,0,0" Click="Cancel_Click"/>
+        <Button  Content="Filtrer" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="600,174,0,0" Click="Filter_Click"/>
+        <Label Content="Filtrer : Nom du Personnel" HorizontalAlignment="Left" Margin="587,199,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Filtrer : Prénom du Personnel" HorizontalAlignment="Left" Margin="587,263,0,0" VerticalAlignment="Top" Width="167"/>
+        <TextBox x:Name="nomfilter" HorizontalAlignment="Left" Height="23" Margin="600,230,0,0" TextWrapping="Wrap" IsEnabled="False" VerticalAlignment="Top" Width="130" Text=""/>
+        <TextBox x:Name="prenomfilter" HorizontalAlignment="Left" Height="23" Margin="600,294,0,0" TextWrapping="Wrap" IsEnabled="False" Text="" VerticalAlignment="Top" Width="130"/>
+        <Button  Content="Rechercher" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="600,333,0,0" Click="FilterRecherche_Click"/>
 
     </Grid>
 </Window>

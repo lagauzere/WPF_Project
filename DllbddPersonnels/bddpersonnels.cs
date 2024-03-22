@@ -85,6 +85,25 @@ namespace DllbddPersonnels
 
         }
 
+        public List<Personnel> fetchallpersonnelsfiltrer(String nom, String prenom)
+        {
+            if(prenom == "" && nom != "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).ToList();
+            }
+            else if(prenom != "" && nom == "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Prenom == prenom).ToList();
+            }
+            else if (prenom != "" && nom != "")
+            {
+                return bdd.Personnels.Where(Personnel => Personnel.Nom == nom).Where(Personnel => Personnel.Prenom == prenom).ToList();
+            }
+            else 
+                return bdd.Personnels.ToList();
+
+        }
+
 
     }
 
