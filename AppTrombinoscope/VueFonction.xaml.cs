@@ -66,8 +66,6 @@ namespace AppTrombinoscope
         {
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
             Fonction f = new Fonction { Intitule = NewService.Text };
-
-
             co.Bdd.Connection.Open();
             co.Bdd.Fonctions.InsertOnSubmit(f);
 

@@ -27,17 +27,27 @@ namespace AppTrombinoscope
         public MainWindow()
         {
             InitializeComponent();
-            if(Properties.Settings.Default.UserName !="" && Properties.Settings.Default.Password != "" && Properties.Settings.Default.Ipaddress != "" && Properties.Settings.Default.Port != "")
+
+            this.MinHeight = 600;
+            this.MinWidth = 850;
+            this.MaxWidth = 850;
+            if (Properties.Settings.Default.UserName !="" && Properties.Settings.Default.Password != "" && Properties.Settings.Default.Ipaddress != "" && Properties.Settings.Default.Port != "")
             {
                 bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-                if (co.ConnexionStatus == true)
+                if (co.ConnexionStatus == true  )
                 {
-                    Liste_du_Personnel.IsEnabled = true;
-                    Gestion_Fonctions.IsEnabled = true;
-                    Gestion_Services.IsEnabled = true;
-                    Gestionnaire.IsEnabled = true;
-
-
+                    if(Properties.Settings.Default.UserName == "GestionnaireBDD")
+                    {
+                        Gestion_Fonctions.IsEnabled = true;
+                        Gestion_Services.IsEnabled = true;
+                        Gestionnaire.IsEnabled = false;
+                        Gestion_Personnels.IsEnabled = true;
+                    }
+                    else
+                    {
+                        Liste_du_Personnel.IsEnabled = true;
+                        Gestionnaire.IsEnabled = true;
+                    }
                 }
             }
             else
@@ -46,14 +56,10 @@ namespace AppTrombinoscope
                 Gestion_Fonctions.IsEnabled = false;
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
+                Gestion_Personnels.IsEnabled = false;
+                MessageBox.Show("test");
             }
-            if (bddpersonnels.Gestionnaire == true)
-            {
-                Gestion_Personnels.IsEnabled = true;
-            }
-            this.MinHeight = 600;
-            this.MinWidth = 850;
-            this.MaxWidth = 850;
+         
             try
             {
                 bdd = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress,
@@ -77,12 +83,19 @@ namespace AppTrombinoscope
             bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
             if (co.ConnexionStatus == true)
             {
-                Liste_du_Personnel.IsEnabled = true;
-                Gestion_Fonctions.IsEnabled = true;
-                Gestion_Services.IsEnabled = true;
-                Gestionnaire.IsEnabled = true;
-                
-                
+                if (Properties.Settings.Default.UserName == "GestionnaireBDD")
+                {
+                    Gestion_Fonctions.IsEnabled = true;
+                    Gestion_Services.IsEnabled = true;
+                    Gestionnaire.IsEnabled = false;
+                    Gestion_Personnels.IsEnabled = true;
+                    Liste_du_Personnel.IsEnabled = true;
+                }
+                else
+                {
+                    Liste_du_Personnel.IsEnabled = true;
+                    Gestionnaire.IsEnabled = true;
+                }
             }
             else
             {
@@ -90,6 +103,7 @@ namespace AppTrombinoscope
                 Gestion_Fonctions.IsEnabled = false;
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
+                Gestion_Personnels.IsEnabled = false;
             }
             List<BddpersonnelContext.Service> lists = bdd.fetchallservice();
             this.ListService.ItemsSource = lists;

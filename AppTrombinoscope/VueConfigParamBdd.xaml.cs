@@ -39,6 +39,8 @@ namespace AppTrombinoscope
             Properties.Settings.Default.Port=port.Text;
             Properties.Settings.Default.Ipaddress = ip.Text;
             Properties.Settings.Default.Save();
+            MainWindow main = new MainWindow();
+            main.Show();
             this.Close();
         }
 

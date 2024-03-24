@@ -32,9 +32,11 @@ namespace AppTrombinoscope
 
         private void Connexion(object sender, RoutedEventArgs e)
         {
-            if(login.Text== "UtilisateurBDD" && mdp.Password == "Password1234@")
+            if(login.Text== "GestionnaireBDD" && mdp.Password == "Password1234@but")
             {
                 bddpersonnels.Gestionnaire = true;
+                Properties.Settings.Default.UserName = login.Text;
+                Properties.Settings.Default.Password = mdp.Password;
                 MainWindow v = new MainWindow();
                 v.Show();
                 this.Close();
