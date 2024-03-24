@@ -27,15 +27,18 @@ namespace AppTrombinoscope
         public MainWindow()
         {
             InitializeComponent();
-            bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
-            if (co.ConnexionStatus == true)
+            if(Properties.Settings.Default.UserName !="" && Properties.Settings.Default.Password != "" && Properties.Settings.Default.Ipaddress != "" && Properties.Settings.Default.Port != "")
             {
-                Liste_du_Personnel.IsEnabled = true;
-                Gestion_Fonctions.IsEnabled = true;
-                Gestion_Services.IsEnabled = true;
-                Gestionnaire.IsEnabled = true;
+                bddpersonnels co = new bddpersonnels(Properties.Settings.Default.UserName, Properties.Settings.Default.Password, Properties.Settings.Default.Ipaddress, Properties.Settings.Default.Port);
+                if (co.ConnexionStatus == true)
+                {
+                    Liste_du_Personnel.IsEnabled = true;
+                    Gestion_Fonctions.IsEnabled = true;
+                    Gestion_Services.IsEnabled = true;
+                    Gestionnaire.IsEnabled = true;
 
 
+                }
             }
             else
             {
@@ -44,8 +47,6 @@ namespace AppTrombinoscope
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
             }
-
-
             if (bddpersonnels.Gestionnaire == true)
             {
                 Gestion_Personnels.IsEnabled = true;
