@@ -57,7 +57,7 @@ namespace AppTrombinoscope
                 Gestion_Services.IsEnabled = false;
                 Gestionnaire.IsEnabled = false;
                 Gestion_Personnels.IsEnabled = false;
-                MessageBox.Show("test");
+      
             }
          
             try
